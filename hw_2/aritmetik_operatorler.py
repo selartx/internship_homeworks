@@ -1,15 +1,37 @@
-number1=input("1. sayiyi giriniz")
-number2=input("2. sayiyi giriniz")
-number1=int(number1)
-number2=int(number2)
-toplama=number1+number2
-cikarma=number1-number2
-carpma=number2*number1
-bolme=number1/number2
-tambolme=number1//number2 #0 gelme durumları özel durumları kontorl et
-modalma=number1%number2
-usalma=number1**number2
+# gorev 1
+number1 = int(input("1. sayiyi giriniz: "))
+number2 = int(input("2. sayiyi   giriniz: "))
 
-#dairenin alanı
-yaricap=input("yaricapi giriniz")
-alan=(yaricap**2)*3.14
+print("Toplama:", number1 + number2)
+
+print("Cikarma number1 - number2:", number1 - number2)
+print("Cikarma number2 - number1:", number2 - number1)
+
+print("Çarpma:", number1 * number2)
+
+
+if number2 != 0:
+    print("Bölme number1 / number2:", number1 / number2)
+    print("Tam Bölme number1 // number2:", number1 // number2)
+    print("Mod Alma number1 % number2:", number1 % number2)
+else:
+    print("Bölme number1 / number2: Tanimsiz" )
+    print("Tam Bölme number1 // number2: Tanimsiz ")
+    print("Mod Alma number1 % number2: Tanimsiz ")
+
+if number1 != 0:
+    print("Bölme number2 / number1:", number2 / number1)
+    print("Tam Bölme number2 // number1:", number2 // number1)
+    print("Mod Alma number2 % number1:", number2 % number1)
+else:
+    print("Bölme number2 / number1: Tanimsiz")
+    print("Tam Bölme number2 // number1: Tanimsiz")
+    print("Mod Alma number2 % number1: Tanimsiz")
+
+print("Üs Alma number1 ** number2:", number1 ** number2)
+print("Üs Alma number2 ** number1:", number2 ** number1)
+
+# gorev 2
+yaricap = float(input("Yarıçapı giriniz: "))
+
+print("Dairenin Alanı:", (yaricap ** 2) * 3.14)

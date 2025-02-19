@@ -5,6 +5,7 @@ if in_meyve in meyveler:
 
 
 #gorev2
+#birebir karşılaştırma büyüklük küçüklük önemli
 parola = "PyThOn123"
 karakter=input("karakter giriniz")
 
